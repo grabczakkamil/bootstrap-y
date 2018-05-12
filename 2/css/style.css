@@ -1,0 +1,12 @@
+.colors {
+    height: 150px;
+    background-color: aqua;
+}
+
+.colors:nth-of-type(2n) {
+    background-color: rebeccapurple;
+}
+
+.colors:nth-of-type(3n) {
+    background-color: chartreuse;
+}
