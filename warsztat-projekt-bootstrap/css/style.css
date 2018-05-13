@@ -12,6 +12,18 @@ header {
  position: relative;
 }
 
+#main-nav .nav-item a:hover {
+    color: #0ed8d6;
+}
+
+#main-nav.scroll {
+    background-color: rgba(14, 216, 214, 0.75)
+}
+#main-nav.scroll .nav-item a:hover {
+    color: #777;
+}
+
+
 .navbar-brand {
     font-family: 'Titan One', cursive;
     font-style: italic;
@@ -22,6 +34,7 @@ header {
     font-weight: bold;
     text-transform: uppercase;
 }
+
 
 .naglowki-header {
     color: white;
@@ -110,7 +123,7 @@ h3.btn-podpis {
 }
 
 #div-ikony .ikona:hover {
-    transform: rotate(180deg);
+    transform: rotate(360deg);
     background-color: white;
     color: #0ed8d6;
     border: 2px solid;
@@ -186,4 +199,10 @@ section#portfolio {
 
 #portfolio .portfolio-image .portfolio-image-background .portfolio-image-mask:hover {
     opacity: 1;
+}
+
+section#our-team {
+    margin-top: 80px;
+    background-color: #f7f7f7;
+    
 }
