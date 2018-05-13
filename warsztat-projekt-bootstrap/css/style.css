@@ -3,6 +3,8 @@ body {
     margin: 0;
 }
 
+/*sekcja header start*/
+
 header {
  height: 100vh;
  background-image: url(../img/transparency.png), url(../img/header/pictures_on_the_wall.jpg);
@@ -18,13 +20,23 @@ header {
 .nav-link {
     font-family:'Montserrat', sans-serif;
     font-weight: bold;
+    text-transform: uppercase;
 }
 
-h1, h2 {
+.naglowki-header {
     color: white;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+.p-header {
+    font-style: italic;
+    font-size: 30px;
 }
 
 #naglowki {
@@ -39,6 +51,139 @@ h1, h2 {
     left: 50%;
     background-color: #0ed8d6;
     transform: translateX(-50%);
-    border: 0px;
-    font-style: 
+    border-color: #0ed8d6;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    
+}
+
+.btn:hover {
+    background-color: white;
+    color: #0ed8d6;
+}
+
+/*sekcja header end*/
+/*sekcja services start*/
+
+section#services {
+    margin-top: 80px;
+}
+
+.naglowki-services {
+    text-align: center;
+    margin-top: 30px;
+    font-family:'Montserrat', sans-serif;
+    
+}
+
+#h1-services {
+  font-weight: bold;  
+}
+
+#p-services {
+    font-size: 20px;
+}
+
+
+h3.btn-podpis {
+    font-family:'Montserrat', sans-serif;
+    font-weight: bolder;
+}
+
+#div-ikony .ikona {
+    color: white;
+    margin-top: 50px;
+    width: 80px;
+    height: 80px;
+    font-size: 45px;
+    text-align: center;
+    background-color: #0ed8d6;
+    border-radius: 50%;
+    line-height: 80px;
+    transition: all 0.5s linear;
+    cursor: pointer;
+}
+
+.div-podpis {
+    margin-top: 30px;
+    text-align: center;
+}
+
+#div-ikony .ikona:hover {
+    transform: rotate(180deg);
+    background-color: white;
+    color: #0ed8d6;
+    border: 2px solid;
+    border-color: #0ed8d6;
+}
+/*sekcja services end*/
+
+/*sekcja portfolio start*/
+
+section#portfolio {
+    margin-top: 80px;
+    background-color: #f7f7f7;
+    
+}
+
+.figura {
+    background-color: #fff;  
+}
+
+.portfolio-image-background {
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+#background-image-1 {
+    background-image: url(../img/portfolio/chestnut_on_bracket.jpg);
+}
+
+#background-image-2 {
+    background-image: url(../img/portfolio/typing_on_laptop.jpg);
+}
+
+#background-image-3 {
+    background-image: url(../img/portfolio/child_with_blue_paint.jpg);
+}
+
+#background-image-4 {
+    background-image: url(../img/portfolio/chaotic_paint.jpg);
+}
+
+#background-image-5 {
+    background-image: url(../img/portfolio/house_with_blue_doors.jpg);
+}
+
+#background-image-6 {
+    background-image: url(../img/portfolio/box_of_cookies.jpg);
+}
+
+#portfolio .portfolio-image {
+    overflow: hidden;
+}
+
+#portfolio .portfolio-image .portfolio-image-background:hover {
+    transform: scale(1.2);
+    transition: all 1s;
+}
+
+#portfolio .portfolio-image .portfolio-image-background .portfolio-image-mask {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(14, 216, 214, 0.85);
+    display: flex;
+    cursor: pointer;
+    font-size: 2em;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    color: #fff;
+}
+
+#portfolio .portfolio-image .portfolio-image-background .portfolio-image-mask:hover {
+    opacity: 1;
 }
